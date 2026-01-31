@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #121212;
+  color: white;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Search */
+.search {
+  display: flex;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+}
+
+.search button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Meta */
+.meta {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* AQI Card */
+.aqi-card {
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.aqi-value {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.aqi-status {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.aqi-scale {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* Weather Card */
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: #1f1f1f;
+  border-radius: 10px;
+}
+
+/* AQI COLORS */
+.good { background: #2e7d32; }
+.fair { background: #f9a825; }
+.moderate { background: #ef6c00; }
+.poor { background: #d84315; }
+.very-poor { background: #b71c1c; }
