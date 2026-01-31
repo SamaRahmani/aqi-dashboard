@@ -10,7 +10,9 @@ function loadDashboard() {
   document.getElementById("aqiValue").innerText = "...";
   document.getElementById("aqiStatus").innerText = "Loading...";
 
-  fetch(`/api/dashboard?city=${city}`)
+  // fetch(`/api/dashboard?city=${city}`)
+  fetch(`https://YOUR_BACKEND_URL/api/dashboard?city=${city}`)
+
     .then(res => {
       if (!res.ok) throw new Error("API error");
       return res.json();
@@ -22,7 +24,6 @@ function loadDashboard() {
 
       document.getElementById("aqiValue").innerText = data.aqi.value;
       document.getElementById("aqiStatus").innerText = data.aqi.status;
-
       document.getElementById("temp").innerText = data.weather.temp;
       document.getElementById("humidity").innerText = data.weather.humidity;
       document.getElementById("wind").innerText = data.weather.wind;
